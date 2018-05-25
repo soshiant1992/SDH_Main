@@ -1,0 +1,8 @@
+prefix=/home/mjmj/catkin_ws_mike/devel
+
+Name: schunk_sdh
+Description: Description of schunk_sdh
+Version: 0.6.8
+Cflags: -I/home/mjmj/catkin_ws_mike/devel/include
+Libs: -L/home/mjmj/catkin_ws_mike/devel/lib 
+Requires: std_msgs message_runtime

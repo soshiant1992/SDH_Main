@@ -1,0 +1,8 @@
+prefix=/home/mjmj/catkin_ws_mike/install
+
+Name: sdh_grasp
+Description: Description of sdh_grasp
+Version: 0.0.0
+Cflags: -I/home/mjmj/catkin_ws_mike/install/include -I/usr/include/eigen3
+Libs: -L/home/mjmj/catkin_ws_mike/install/lib 
+Requires: 

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>ramp_gripper</name>
+  <version>0.0.0</version>
+  <description>The metapackage package</description>
+
+  <maintainer email="myavari@todo.todo">myavari</maintainer>
+
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>schunk_sdh</run_depend>
+  <run_depend>sdh_grasp</run_depend>
+
+  
+
+  <export>
+    <metapackage/>
+
+  </export>
+</package>

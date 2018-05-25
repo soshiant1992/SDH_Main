@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+  <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="sdh_mm">
+
+	<xacro:include filename="$(find schunk_description)/urdf/sdh/sdh.urdf.xacro" />
+
+	<link name = "odom" />
+	<xacro:schunk_sdh name="sdh" parent="odom">
+		<origin xyz="0 0 0" rpy = "0 0 0" />  
+        </xacro:schunk_sdh>
+
+  </robot>

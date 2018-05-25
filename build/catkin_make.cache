@@ -1,0 +1,2 @@
+ramp_gripper/ramp_gripper:ramp_gripper/schunk_description:ramp_gripper/schunk_sdh:ramp_gripper/sdh_grasp
+-DCATKIN_DEVEL_PREFIX=/home/mjmj/catkin_ws_mike/devel -DCMAKE_INSTALL_PREFIX=/home/mjmj/catkin_ws_mike/install -G Unix Makefiles

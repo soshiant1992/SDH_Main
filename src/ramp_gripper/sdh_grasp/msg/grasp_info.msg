@@ -1,0 +1,2 @@
+bool state
+string type

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node name="sdh_read" pkg="sdh_grasp" type="sdh_read" cwd="node" respawn="true" output="screen" >	
+	</node>
+
+	
+</launch>

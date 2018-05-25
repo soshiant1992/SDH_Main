@@ -1,0 +1,5 @@
+dsadevicestring: 192.168.2.50
+dsadevicenum: 13000
+polling: false
+use_rle: true
+frequency: 100.0

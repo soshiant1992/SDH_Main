@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<launch>
+
+	<node name="sdh_grasp_control" pkg="sdh_grasp" type="sdh_grasp_control" cwd="node" respawn="true" output="screen" >
+		
+	<!-- all the values are in radians -->	
+	<!-- the order is same as shown in the document -->
+		<!-- 0 refers to knuckle joint angle -->
+		<!-- 1 refers to thumb proximal joint angle -->
+		<!-- 2 refers to thumb distal joint angle -->
+		<!-- 3 refers to finger1 proximal angle -->
+		<!-- 4 refers to finger1 distal joint angle -->
+		<!-- 5 refers to finger2 proximal angle -->
+		<!-- 6 refers to finger2 distal angle -->
+			
+		<param name="Lateral_0" value="0" /> 
+		<param name="Lateral_1" value="-1.0471" />
+		<param name="Lateral_2" value="0" />
+		<param name="Lateral_3" value="-1.0471" />
+		<param name="Lateral_4" value="0" />
+		<param name="Lateral_5" value="-1.0471" />
+		<param name="Lateral_6" value="0" />
+		
+
+		<param name="Spherical_0" value="0.61" />
+		<param name="Spherical_1" value="-1.0471" />
+		<param name="Spherical_2" value="0.8726" />
+		<param name="Spherical_3" value="-1.0471" />
+		<param name="Spherical_4" value="0.8726" />
+		<param name="Spherical_5" value="-1.0471" />
+		<param name="Spherical_6" value="0.8726" />
+
+				
+		<param name="Pinch_0" value="1.57" />
+		<param name="Pinch_1" value="-1.0471" />
+		<param name="Pinch_2" value="1.0471" />
+		<param name="Pinch_3" value="-0.6981" />
+		<param name="Pinch_4" value="1.0471" />
+		<param name="Pinch_5" value="-0.6981" />
+		<param name="Pinch_6" value="1.0471" />
+
+		
+	</node>
+
+
+	<node name="sdh_read" pkg="sdh_grasp" type="sdh_read" cwd="node" respawn="true" output="screen" >	
+	</node>
+
+	
+</launch>
