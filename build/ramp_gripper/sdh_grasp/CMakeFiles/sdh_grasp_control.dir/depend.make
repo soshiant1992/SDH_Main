@@ -5,9 +5,9 @@ ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cp
 ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/devel/include/schunk_sdh/TactileSensor.h
 ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/devel/include/sdh_grasp/grasp_info.h
 ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/devel/include/sdh_grasp/pre_grasp_pos_data.h
-ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/callbacks.h
-ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/headers.h
-ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/helperFunctions.h
+ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/callbacks.h
+ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/headers.h
+ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/helperFunctions.h
 ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/sdh_grasp_control.cpp
 ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h

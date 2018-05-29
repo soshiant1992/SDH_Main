@@ -134,9 +134,10 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/sdh_grasp_node.cpp)
+#headerc137
 
 add_executable(sdh_read src/sdh_read.cpp)
-add_executable(sdh_grasp_control src/sdh_grasp_control.cpp)
+add_executable(sdh_grasp_control src/sdh_grasp_control.cpp src/header/headers.h src/header/callbacks.h src/header/helperFunctions.h)
 #add_executable(graspControll src/graspControll.cpp)
 add_executable(test_node2 src/test_node2.cpp)
 add_executable(SDH_move_finger_interface src/SDH_move_finger_interface.cpp)

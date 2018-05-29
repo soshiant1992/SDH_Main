@@ -74,15 +74,15 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/callbacks.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/callbacks.h
 helperFunctions.h
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/helperFunctions.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/helperFunctions.h
 
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/headers.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/headers.h
 ros/ros.h
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/ros/ros.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/ros/ros.h
 std_msgs/String.h
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/std_msgs/String.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/std_msgs/String.h
 sstream
 -
 iostream
@@ -94,15 +94,15 @@ vector
 cstdlib
 -
 std_msgs/String.h
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/std_msgs/String.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/std_msgs/String.h
 string.h
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/string.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/string.h
 schunk_sdh/TactileSensor.h
 -
 schunk_sdh/TactileMatrix.h
 -
 sensor_msgs/JointState.h
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/sensor_msgs/JointState.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/sensor_msgs/JointState.h
 std_msgs/Float32.h
 -
 std_msgs/Float32MultiArray.h
@@ -124,21 +124,21 @@ actionlib/client/simple_action_client.h
 cob_srvs/SetString.h
 -
 std_srvs/Trigger.h
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/std_srvs/Trigger.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/std_srvs/Trigger.h
 sdh_grasp/grasp_info.h
 -
 sdh_grasp/pre_grasp_pos_data.h
 -
 thread
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/thread
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/thread
 
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/helperFunctions.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/helperFunctions.h
 headers.h
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/headers.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/headers.h
 
 /home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/sdh_grasp_control.cpp
-callbacks.h
-/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/callbacks.h
+header/callbacks.h
+/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/callbacks.h
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h
