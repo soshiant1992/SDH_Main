@@ -13,6 +13,7 @@
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/schunk_sdh/CMakeFiles/schunk_sdh_generate_messages.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/schunk_sdh/CMakeFiles/schunk_sdh_generate_messages_cpp.dir
+/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/schunk_sdh/CMakeFiles/schunk_sdh_generate_messages_py.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/tf2_msgs_generate_messages_py.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/schunk_sdh/CMakeFiles/schunk_sdh.dir
@@ -22,6 +23,7 @@
 /home/mjmj/catkin_ws_mike/build/gtest/CMakeFiles/gtest.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/control_msgs_generate_messages_lisp.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/EP_libpcan.dir
+/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_py.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_generate_messages.dir
@@ -61,8 +63,6 @@
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/tf_generate_messages_py.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_generate_messages_py.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir
-/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/test_node3.dir
-/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/test_node4.dir
 /home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/CMakeFiles/cob_srvs_generate_messages_py.dir
 /home/mjmj/catkin_ws_mike/build/CMakeFiles/clean_test_results.dir
 /home/mjmj/catkin_ws_mike/build/CMakeFiles/run_tests.dir

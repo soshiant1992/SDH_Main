@@ -7,11 +7,11 @@ void jointCallback(const sensor_msgs::JointState::ConstPtr& msg)
         for(size_t i = 0; i < msg->position.size(); i++)
         {
             current_angles[i] = msg->position[i]*180/3.1415;
-            if(i!=0)anglesmat(i-1,anglesmat.n_cols-1)=current_angles[i] ;
+//            if(i!=0)anglesmat(i-1,anglesmat.n_cols-1)=current_angles[i] ;
         }
-        anglesmat.insert_cols(anglesmat.n_cols,1);
-        rosTime1.insert_cols(rosTime1.n_cols,1);
-        rosTime1(rosTime1.n_cols-1)=ros::Time::now().toSec()-begin_t;
+//        anglesmat.insert_cols(anglesmat.n_cols,1);
+//        rosTime1.insert_cols(rosTime1.n_cols,1);
+//        rosTime1(rosTime1.n_cols-1)=ros::Time::now().toSec()-begin_t;
 
 //        if(randi())
 //        {anglesmat.save("anglesc137",raw_ascii);
@@ -38,17 +38,22 @@ void tactileCallback(const schunk_sdh::TactileSensor::ConstPtr& msg)
     for(int sensorID=0; sensorID < 6; sensorID++)
     {
         int sz = msg->tactile_matrix[sensorID].cells_x * msg->tactile_matrix[sensorID].cells_y ;
-        sensordata=zeros(sz);
+//        sensordata=zeros(sz);
+        double  sensordata[sz];   double mean54=0;
         for (int i = 0; i < sz; i++)
         {
             int val = msg->tactile_matrix[sensorID].tactile_array[i];
-            sensordata(i)=val;
+            sensordata[i]=val;
             if(Pstrong[sensorID] < val)
                 Pstrong[sensorID] = val ;
+            mean54+=sensordata[i];
+
         }
+
+
         if(Pstrong[sensorID]>0)
-        { Pstrong[sensorID]=mean(nonzeros(sensordata));
-            sensordata2(sensorID,sensordata2.n_cols-1)=Pstrong[sensorID];
+        { Pstrong[sensorID]=mean54;
+//            sensordata2(sensorID,sensordata2.n_cols-1)=Pstrong[sensorID];
 //            cout<<sensorID<<"===="<<Pstrong[sensorID]<<endl;
 //            cout<<(double)(ros::Time::now().toSec()-begin_t)<<endl;
 //            cout<<begin_t<<endl;
@@ -59,22 +64,22 @@ void tactileCallback(const schunk_sdh::TactileSensor::ConstPtr& msg)
     Pstrong[2]+=5;
     Pstrong[2]*=10;
 
-    sensordata2.insert_cols(sensordata2.n_cols,1);
-    rosTime2.insert_cols(rosTime2.n_cols,1);
-    rosTime2(rosTime2.n_cols-1)=ros::Time::now().toSec()-begin_t;
-    if(randi())
-    {sensordata2.save("sensorc137",raw_ascii);
-        rosTime2.save("rosTime2",raw_ascii);
-    }
+//    sensordata2.insert_cols(sensordata2.n_cols,1);
+//    rosTime2.insert_cols(rosTime2.n_cols,1);
+//    rosTime2(rosTime2.n_cols-1)=ros::Time::now().toSec()-begin_t;
+//    if(randi())
+//    {sensordata2.save("sensorc137",raw_ascii);
+//        rosTime2.save("rosTime2",raw_ascii);
+//    }
 
     double pmax=1000;
 
     if(grasp_type=="cube" && gripit && ((Pstrong[3]+Pstrong[5]>pmax)||((Pstrong[3]>pmax&&Pstrong[5]>pmax)))){
         gripit=false;
         call_backoff=true;
-        mat saved_on_what_seq=zeros(1);
-        saved_on_what_seq(0)=ros::Time::now().toSec()-begin_t;
-        saved_on_what_seq.save("c137",raw_ascii);
+//        mat saved_on_what_seq=zeros(1);
+//        saved_on_what_seq(0)=ros::Time::now().toSec()-begin_t;
+//        saved_on_what_seq.save("c137",raw_ascii);
         backoff2();
     }
   else  if( grasp_type=="sphere" && gripit &&(
@@ -83,9 +88,9 @@ void tactileCallback(const schunk_sdh::TactileSensor::ConstPtr& msg)
                 )){
         gripit=false;
         call_backoff=true;
-        mat saved_on_what_seq=zeros(1);
-        saved_on_what_seq(0)=ros::Time::now().toSec()-begin_t;
-        saved_on_what_seq.save("c137",raw_ascii);
+//        mat saved_on_what_seq=zeros(1);
+//        saved_on_what_seq(0)=ros::Time::now().toSec()-begin_t;
+//        saved_on_what_seq.save("c137",raw_ascii);
         backoff2();
     }
   else  if( grasp_type=="cylinder" &&gripit && reachedproximal==false &&(
@@ -99,9 +104,9 @@ void tactileCallback(const schunk_sdh::TactileSensor::ConstPtr& msg)
             /*&&  Pstrong[0]>10&&  Pstrong[2]>10&&  Pstrong[4]>10 */ )){
         gripit=false;cout<<"gripit=false"<<endl;
         call_backoff=true;
-        mat saved_on_what_seq=zeros(1);
-        saved_on_what_seq(0)=ros::Time::now().toSec()-begin_t;
-        saved_on_what_seq.save("c137",raw_ascii);
+//        mat saved_on_what_seq=zeros(1);
+//        saved_on_what_seq(0)=ros::Time::now().toSec()-begin_t;
+//        saved_on_what_seq.save("c137",raw_ascii);
           backoff2();
     }
 //    if(gripit && Pstrong[0]+Pstrong[2]+Pstrong[4]>30){
@@ -184,9 +189,9 @@ void stop_callback(const sdh_grasp::grasp_info& msg) {
 
     //            feedback.data =1;
     //            set_feedback.publish(feedback);
-    mat saved_on_what_seq=zeros(1);
-    saved_on_what_seq(0)=ros::Time::now().toSec()-begin_t;
-    saved_on_what_seq.save("c137",raw_ascii);
+//    mat saved_on_what_seq=zeros(1);
+//    saved_on_what_seq(0)=ros::Time::now().toSec()-begin_t;
+//    saved_on_what_seq.save("c137",raw_ascii);
 
 }
 void grasp_pos_callback(const sdh_grasp::pre_grasp_pos_data& msg) {

@@ -5,11 +5,12 @@
 
 
 int main(int argc, char **argv)
-{   anglesmat=zeros(6,1);
-    sensordata2=zeros(6,1);
+{
+//    anglesmat=zeros(6,1);
+//    sensordata2=zeros(6,1);
     grasp_type="cylinder";
-    rosTime1=zeros(1);
-    rosTime2=zeros(1);
+//    rosTime1=zeros(1);
+//    rosTime2=zeros(1);
     ros::init(argc, argv, "sdh_grasp_control");
     ros::NodeHandle NH ("~");
     // Service Client for initizalization

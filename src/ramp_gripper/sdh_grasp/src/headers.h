@@ -23,7 +23,7 @@
 #include <control_msgs/FollowJointTrajectoryResult.h>
 #include <std_msgs/String.h>
 #include <std_msgs/Int8.h>
-#include"armadillo"
+//#include"armadillo"
 // For the action client and follow trajectory goal
 #include <control_msgs/FollowJointTrajectoryAction.h>
 #include <actionlib/client/simple_action_client.h>
@@ -38,7 +38,7 @@
 #include <sdh_grasp/pre_grasp_pos_data.h>
 #include"thread"
 using namespace std;
-using namespace arma;
+//using namespace arma;
 double current_angles[7] = { -60, -60, -60 , -60 , -60 , -60 , -60 };  /// used
 int Pstrong[6] = {0 , 0, 0 , 0 , 0 , 0 } ;/// used
 double d_theta[6] = {0 , 0, 0 , 0 , 0 , 0 } ;
@@ -58,9 +58,9 @@ bool reachedproximal=false;
 //......................... Action Client
 using actionlib::SimpleActionClient;
 
-mat sensordata,sensordata2,rosTime1,rosTime2;
+//mat sensordata,sensordata2,rosTime1,rosTime2;
 string grasp_type;
-mat anglesmat;
+//mat anglesmat;
 SimpleActionClient<control_msgs::FollowJointTrajectoryAction>* traj_client;
 
 ros::ServiceClient set_operation_mode_client;

@@ -139,8 +139,8 @@ add_executable(sdh_read src/sdh_read.cpp)
 add_executable(sdh_grasp_control src/sdh_grasp_control.cpp)
 #add_executable(graspControll src/graspControll.cpp)
 add_executable(test_node2 src/test_node2.cpp)
-add_executable(test_node3 src/test_node3.cpp)
-add_executable(test_node4 src/test_node4.cpp)
+add_executable(SDH_move_finger_interface src/SDH_move_finger_interface.cpp)
+add_executable(SDH_grip_interface src/SDH_grip_interface.cpp)
 add_executable(data src/data.cpp)
 add_executable(slip src/slip.cpp)
 add_executable(spatial src/spatial.cpp)
@@ -158,8 +158,8 @@ add_dependencies(sdh_read ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_
 add_dependencies(sdh_grasp_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(test_node2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 #add_dependencies(graspControll ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(test_node3 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(test_node4 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(SDH_move_finger_interface ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(SDH_grip_interface ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(data ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(slip ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(spatial ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
@@ -184,13 +184,13 @@ target_link_libraries(sdh_grasp_control
 target_link_libraries(test_node2
    ${catkin_LIBRARIES}
  )
-target_link_libraries(test_node3
+target_link_libraries(SDH_move_finger_interface
    ${catkin_LIBRARIES}
  )
 #target_link_libraries(graspControll
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(test_node4
+target_link_libraries(SDH_grip_interface
    ${catkin_LIBRARIES}
  )
 target_link_libraries(data
@@ -236,7 +236,7 @@ target_link_libraries(spatial
 ## Mark other files for installation (e.g. launch and bag files, etc.)
 # install(FILES
 #   # myfile1
-#   # myfile2test_node3
+#   # myfile2SDH_move_finger_interface
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 # )
 

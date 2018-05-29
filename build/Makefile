@@ -270,6 +270,32 @@ EP_libpcan/fast:
 .PHONY : EP_libpcan/fast
 
 #=============================================================================
+# Target rules for targets named SDH_grip_interface
+
+# Build rule for target.
+SDH_grip_interface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SDH_grip_interface
+.PHONY : SDH_grip_interface
+
+# fast build rule for target.
+SDH_grip_interface/fast:
+	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/build
+.PHONY : SDH_grip_interface/fast
+
+#=============================================================================
+# Target rules for targets named SDH_move_finger_interface
+
+# Build rule for target.
+SDH_move_finger_interface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SDH_move_finger_interface
+.PHONY : SDH_move_finger_interface
+
+# fast build rule for target.
+SDH_move_finger_interface/fast:
+	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build
+.PHONY : SDH_move_finger_interface/fast
+
+#=============================================================================
 # Target rules for targets named _sdh_grasp_generate_messages_check_deps_grasp_info
 
 # Build rule for target.
@@ -907,32 +933,6 @@ test_node2/fast:
 .PHONY : test_node2/fast
 
 #=============================================================================
-# Target rules for targets named test_node3
-
-# Build rule for target.
-test_node3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_node3
-.PHONY : test_node3
-
-# fast build rule for target.
-test_node3/fast:
-	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/test_node3.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/test_node3.dir/build
-.PHONY : test_node3/fast
-
-#=============================================================================
-# Target rules for targets named test_node4
-
-# Build rule for target.
-test_node4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_node4
-.PHONY : test_node4
-
-# fast build rule for target.
-test_node4/fast:
-	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/test_node4.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/test_node4.dir/build
-.PHONY : test_node4/fast
-
-#=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1263,11 +1263,13 @@ help:
 	@echo "... control_msgs_generate_messages_py"
 	@echo "... sdh_grasp_genlisp"
 	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... SDH_grip_interface"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... diagnostic_msgs_generate_messages_cpp"
 	@echo "... control_msgs_generate_messages_lisp"
 	@echo "... EP_libpcan"
+	@echo "... SDH_move_finger_interface"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... sdh_grasp_generate_messages"
@@ -1298,8 +1300,6 @@ help:
 	@echo "... tf_generate_messages_py"
 	@echo "... sdh_grasp_generate_messages_py"
 	@echo "... test_node2"
-	@echo "... test_node3"
-	@echo "... test_node4"
 	@echo "... cob_srvs_generate_messages_py"
 	@echo "... data"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
