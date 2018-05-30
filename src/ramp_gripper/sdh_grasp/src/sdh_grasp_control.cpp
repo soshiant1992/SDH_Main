@@ -44,6 +44,7 @@ ros::AsyncSpinner spinner(4); // Use 4 threads
     spinner.start();
     while(ros::ok()) {
 //        ros::spinOnce();
+        if(!openhand)  domainloop();
         loop_rate.sleep();
     }
 
