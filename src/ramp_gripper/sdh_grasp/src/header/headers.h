@@ -76,4 +76,4 @@ ros::ServiceClient init;
 ros::ServiceClient stop;
 std_srvs::Trigger trigger ;
 
-
+cob_srvs::SetString cobsrv ;

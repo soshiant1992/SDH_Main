@@ -3,22 +3,21 @@ bool setvelocitymode() {
 //    std_srvs::Trigger trigger ;
    cout<< recover.call(trigger)<<endl;
     if (controller_mode.compare("velocity")==0) return true;
-    cob_srvs::SetString srv ;
     std::stringstream ss;
     ss << "velocity" ;
-    srv.request.data = ss.str();
+    cobsrv.request.data = ss.str();
 
 
-    if(set_operation_mode_client.call(srv)){
-        if(srv.response.success){
+    if(set_operation_mode_client.call(cobsrv)){
+        if(cobsrv.response.success){
             cout<<"$in_velocity_mode"<<endl;
             controller_mode="velocity";
             return true;
     }
     else {
-
      cout<<"%not_Velocity_mode"<<endl;
      setvelocitymode();
+     usleep(100000);
         }}
 }
 ///............                           Proportional Controller
@@ -100,13 +99,13 @@ bool setpositionmode(){
        cout<< recover.call(trigger)<<endl;
     if (controller_mode.compare("position")==0) return true;
 
-    cob_srvs::SetString srv ;
+
     std::stringstream ss;
     ss << "position" ;
-    srv.request.data = ss.str();
+    cobsrv.request.data = ss.str();
 
-    if(set_operation_mode_client.call(srv)){
-        if(srv.response.success){
+    if(set_operation_mode_client.call(cobsrv)){
+        if(cobsrv.response.success){
             controller_mode="position";
             cout<<"$in_Position_mode"<<endl;
             return true;
@@ -114,6 +113,7 @@ bool setpositionmode(){
     else {
             cout<<"%not_Position_mode"<<endl;
             setpositionmode();
+            usleep(100000);
            }}
 }
 
@@ -194,21 +194,20 @@ void pre_grasp_open(double angles[]) {
             counter88++;
             ROS_WARN("Failed to call service driver/recover");
             init.call(trigger);
-       usleep(1000000)     ;
+       usleep(100000)     ;
            }
         if(counter88<3)
            ROS_INFO("driver recovered");
 else
             ROS_INFO("driver recovery gave up");
 
-   if(setpositionmode()){ t = 0.001 ;
+   if(setpositionmode()){ t = 0.1 ;
     // Action Cl4ient for the joint Motion
-    traj_client = new SimpleActionClient<control_msgs::FollowJointTrajectoryAction>("/joint_trajectory_controller/follow_joint_trajectory",true);
 
     // wait for action server to come up
-    while(!traj_client->waitForServer(ros::Duration(0.3))){
-        ROS_INFO("Waiting for the joint_trajectory_action server");
-    }
+//    while(!traj_client->waitForServer(ros::Duration(0.3))){
+//        ROS_INFO("Waiting for the joint_trajectory_action server");
+//    }
 //    ROS_INFO("Connected to the server");
 
     // Trajectory Following

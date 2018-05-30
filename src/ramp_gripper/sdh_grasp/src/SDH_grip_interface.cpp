@@ -34,17 +34,16 @@ int main(int argc, char **argv)
 //    ros::Subscriber sub = n.subscribe("/sdh_grasp_control/status",1, feedback);
 
         sdh_grasp::grasp_info abc;
-
-        for (int var = 0; var < 2; ++var) {
+        ros::Rate loop_rate(3);
+        loop_rate.sleep();
+//        for (int var = 0; var < 1; ++var) {
 
 
         abc.type = "cylinder";
         pub.publish(abc);
-        ros::Rate loop_rate(3);
-        loop_rate.sleep();
         cout<<"sent"<<endl;
         ros::spinOnce();
-        }
+//        }
         //sleep(3);
 //ros::spin();
 
