@@ -136,15 +136,15 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/sdh_grasp_node.cpp)
 #headerc137
 
-add_executable(sdh_read src/sdh_read.cpp)
+#add_executable(sdh_read src/sdh_read.cpp)
 add_executable(sdh_grasp_control src/sdh_grasp_control.cpp src/header/headers.h src/header/callbacks.h src/header/helperFunctions.h)
 #add_executable(graspControll src/graspControll.cpp)
-add_executable(test_node2 src/test_node2.cpp)
+#add_executable(test_node2 src/test_node2.cpp)
 add_executable(SDH_move_finger_interface src/SDH_move_finger_interface.cpp)
 add_executable(SDH_grip_interface src/SDH_grip_interface.cpp)
-add_executable(data src/data.cpp)
-add_executable(slip src/slip.cpp)
-add_executable(spatial src/spatial.cpp)
+#add_executable(data src/data.cpp)
+#add_executable(slip src/slip.cpp)
+#add_executable(spatial src/spatial.cpp)
 
 
 
@@ -155,15 +155,15 @@ add_executable(spatial src/spatial.cpp)
 # set_target_properties(${PROJECT_NAME}_node PROPERTIES OUTPUT_NAME node PREFIX "")
 
 
-add_dependencies(sdh_read ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(sdh_read ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(sdh_grasp_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(test_node2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(test_node2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 #add_dependencies(graspControll ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(SDH_move_finger_interface ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(SDH_grip_interface ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(data ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(slip ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(spatial ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(data ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(slip ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(spatial ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 
 
@@ -176,15 +176,15 @@ add_dependencies(spatial ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_T
 #   ${catkin_LIBRARIES}
 # )
 
-target_link_libraries(sdh_read
-   ${catkin_LIBRARIES}
- )
+#target_link_libraries(sdh_read
+#   ${catkin_LIBRARIES}
+# )
 target_link_libraries(sdh_grasp_control
    ${catkin_LIBRARIES}
  )
-target_link_libraries(test_node2
-   ${catkin_LIBRARIES}
- )
+#target_link_libraries(test_node2
+#   ${catkin_LIBRARIES}
+# )
 target_link_libraries(SDH_move_finger_interface
    ${catkin_LIBRARIES}
  )
@@ -194,16 +194,16 @@ target_link_libraries(SDH_move_finger_interface
 target_link_libraries(SDH_grip_interface
    ${catkin_LIBRARIES}
  )
-target_link_libraries(data
-   ${catkin_LIBRARIES}
- )
-target_link_libraries(slip
-   ${catkin_LIBRARIES}
- )
-target_link_libraries(spatial
-   ${catkin_LIBRARIES}
-   ${Eigen_LIBRARIES}
- )
+#target_link_libraries(data
+#   ${catkin_LIBRARIES}
+# )
+#target_link_libraries(slip
+#   ${catkin_LIBRARIES}
+# )
+#target_link_libraries(spatial
+#   ${catkin_LIBRARIES}
+#   ${Eigen_LIBRARIES}
+# )
 
 
 #############

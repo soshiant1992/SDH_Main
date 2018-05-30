@@ -405,20 +405,6 @@ control_msgs_generate_messages_py/fast:
 .PHONY : control_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-ramp_gripper/sdh_grasp/CMakeFiles/data.dir/rule:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/data.dir/rule
-.PHONY : ramp_gripper/sdh_grasp/CMakeFiles/data.dir/rule
-
-# Convenience name for target.
-data: ramp_gripper/sdh_grasp/CMakeFiles/data.dir/rule
-.PHONY : data
-
-# fast build rule for target.
-data/fast:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/data.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/data.dir/build
-.PHONY : data/fast
-
-# Convenience name for target.
 ramp_gripper/sdh_grasp/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
 .PHONY : ramp_gripper/sdh_grasp/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
@@ -699,20 +685,6 @@ sdh_grasp_genpy/fast:
 .PHONY : sdh_grasp_genpy/fast
 
 # Convenience name for target.
-ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/rule:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/rule
-.PHONY : ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/rule
-
-# Convenience name for target.
-sdh_read: ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/rule
-.PHONY : sdh_read
-
-# fast build rule for target.
-sdh_read/fast:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/build
-.PHONY : sdh_read/fast
-
-# Convenience name for target.
 ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
@@ -753,34 +725,6 @@ sensor_msgs_generate_messages_py: ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_
 sensor_msgs_generate_messages_py/fast:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/rule:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/rule
-.PHONY : ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/rule
-
-# Convenience name for target.
-slip: ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/rule
-.PHONY : slip
-
-# fast build rule for target.
-slip/fast:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/build
-.PHONY : slip/fast
-
-# Convenience name for target.
-ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/rule:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/rule
-.PHONY : ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/rule
-
-# Convenience name for target.
-spatial: ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/rule
-.PHONY : spatial
-
-# fast build rule for target.
-spatial/fast:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/build
-.PHONY : spatial/fast
 
 # Convenience name for target.
 ramp_gripper/sdh_grasp/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
@@ -865,20 +809,6 @@ std_srvs_generate_messages_py: ramp_gripper/sdh_grasp/CMakeFiles/std_srvs_genera
 std_srvs_generate_messages_py/fast:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/std_srvs_generate_messages_py.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/std_srvs_generate_messages_py.dir/build
 .PHONY : std_srvs_generate_messages_py/fast
-
-# Convenience name for target.
-ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/rule:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/rule
-.PHONY : ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/rule
-
-# Convenience name for target.
-test_node2: ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/rule
-.PHONY : test_node2
-
-# fast build rule for target.
-test_node2/fast:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/build
-.PHONY : test_node2/fast
 
 # Convenience name for target.
 ramp_gripper/sdh_grasp/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
@@ -1054,30 +984,6 @@ src/SDH_move_finger_interface.cpp.s:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/src/SDH_move_finger_interface.cpp.s
 .PHONY : src/SDH_move_finger_interface.cpp.s
 
-src/data.o: src/data.cpp.o
-.PHONY : src/data.o
-
-# target to build an object file
-src/data.cpp.o:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/data.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/data.dir/src/data.cpp.o
-.PHONY : src/data.cpp.o
-
-src/data.i: src/data.cpp.i
-.PHONY : src/data.i
-
-# target to preprocess a source file
-src/data.cpp.i:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/data.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/data.dir/src/data.cpp.i
-.PHONY : src/data.cpp.i
-
-src/data.s: src/data.cpp.s
-.PHONY : src/data.s
-
-# target to generate assembly for a file
-src/data.cpp.s:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/data.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/data.dir/src/data.cpp.s
-.PHONY : src/data.cpp.s
-
 src/sdh_grasp_control.o: src/sdh_grasp_control.cpp.o
 .PHONY : src/sdh_grasp_control.o
 
@@ -1101,102 +1007,6 @@ src/sdh_grasp_control.s: src/sdh_grasp_control.cpp.s
 src/sdh_grasp_control.cpp.s:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.s
 .PHONY : src/sdh_grasp_control.cpp.s
-
-src/sdh_read.o: src/sdh_read.cpp.o
-.PHONY : src/sdh_read.o
-
-# target to build an object file
-src/sdh_read.cpp.o:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/src/sdh_read.cpp.o
-.PHONY : src/sdh_read.cpp.o
-
-src/sdh_read.i: src/sdh_read.cpp.i
-.PHONY : src/sdh_read.i
-
-# target to preprocess a source file
-src/sdh_read.cpp.i:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/src/sdh_read.cpp.i
-.PHONY : src/sdh_read.cpp.i
-
-src/sdh_read.s: src/sdh_read.cpp.s
-.PHONY : src/sdh_read.s
-
-# target to generate assembly for a file
-src/sdh_read.cpp.s:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/src/sdh_read.cpp.s
-.PHONY : src/sdh_read.cpp.s
-
-src/slip.o: src/slip.cpp.o
-.PHONY : src/slip.o
-
-# target to build an object file
-src/slip.cpp.o:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/src/slip.cpp.o
-.PHONY : src/slip.cpp.o
-
-src/slip.i: src/slip.cpp.i
-.PHONY : src/slip.i
-
-# target to preprocess a source file
-src/slip.cpp.i:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/src/slip.cpp.i
-.PHONY : src/slip.cpp.i
-
-src/slip.s: src/slip.cpp.s
-.PHONY : src/slip.s
-
-# target to generate assembly for a file
-src/slip.cpp.s:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/src/slip.cpp.s
-.PHONY : src/slip.cpp.s
-
-src/spatial.o: src/spatial.cpp.o
-.PHONY : src/spatial.o
-
-# target to build an object file
-src/spatial.cpp.o:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/src/spatial.cpp.o
-.PHONY : src/spatial.cpp.o
-
-src/spatial.i: src/spatial.cpp.i
-.PHONY : src/spatial.i
-
-# target to preprocess a source file
-src/spatial.cpp.i:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/src/spatial.cpp.i
-.PHONY : src/spatial.cpp.i
-
-src/spatial.s: src/spatial.cpp.s
-.PHONY : src/spatial.s
-
-# target to generate assembly for a file
-src/spatial.cpp.s:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/src/spatial.cpp.s
-.PHONY : src/spatial.cpp.s
-
-src/test_node2.o: src/test_node2.cpp.o
-.PHONY : src/test_node2.o
-
-# target to build an object file
-src/test_node2.cpp.o:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/src/test_node2.cpp.o
-.PHONY : src/test_node2.cpp.o
-
-src/test_node2.i: src/test_node2.cpp.i
-.PHONY : src/test_node2.i
-
-# target to preprocess a source file
-src/test_node2.cpp.i:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/src/test_node2.cpp.i
-.PHONY : src/test_node2.cpp.i
-
-src/test_node2.s: src/test_node2.cpp.s
-.PHONY : src/test_node2.s
-
-# target to generate assembly for a file
-src/test_node2.cpp.s:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/src/test_node2.cpp.s
-.PHONY : src/test_node2.cpp.s
 
 # Help Target
 help:
@@ -1238,28 +1048,23 @@ help:
 	@echo "... _sdh_grasp_generate_messages_check_deps_grasp_info"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... list_install_components"
-	@echo "... sdh_read"
 	@echo "... sdh_grasp_generate_messages_lisp"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... _sdh_grasp_generate_messages_check_deps_pre_grasp_pos_data"
 	@echo "... _sdh_grasp_generate_messages_check_deps_spatial_array"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... spatial"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... diagnostic_msgs_generate_messages_py"
-	@echo "... slip"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
 	@echo "... sdh_grasp_generate_messages_py"
 	@echo "... test"
-	@echo "... test_node2"
 	@echo "... cob_srvs_generate_messages_py"
-	@echo "... data"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... sdh_grasp_genpy"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
@@ -1278,24 +1083,9 @@ help:
 	@echo "... src/SDH_move_finger_interface.o"
 	@echo "... src/SDH_move_finger_interface.i"
 	@echo "... src/SDH_move_finger_interface.s"
-	@echo "... src/data.o"
-	@echo "... src/data.i"
-	@echo "... src/data.s"
 	@echo "... src/sdh_grasp_control.o"
 	@echo "... src/sdh_grasp_control.i"
 	@echo "... src/sdh_grasp_control.s"
-	@echo "... src/sdh_read.o"
-	@echo "... src/sdh_read.i"
-	@echo "... src/sdh_read.s"
-	@echo "... src/slip.o"
-	@echo "... src/slip.i"
-	@echo "... src/slip.s"
-	@echo "... src/spatial.o"
-	@echo "... src/spatial.i"
-	@echo "... src/spatial.s"
-	@echo "... src/test_node2.o"
-	@echo "... src/test_node2.i"
-	@echo "... src/test_node2.s"
 .PHONY : help
 
 

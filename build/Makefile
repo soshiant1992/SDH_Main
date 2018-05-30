@@ -491,19 +491,6 @@ control_msgs_generate_messages_py/fast:
 .PHONY : control_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named data
-
-# Build rule for target.
-data: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 data
-.PHONY : data
-
-# fast build rule for target.
-data/fast:
-	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/data.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/data.dir/build
-.PHONY : data/fast
-
-#=============================================================================
 # Target rules for targets named diagnostic_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -764,19 +751,6 @@ sdh_grasp_genpy/fast:
 .PHONY : sdh_grasp_genpy/fast
 
 #=============================================================================
-# Target rules for targets named sdh_read
-
-# Build rule for target.
-sdh_read: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sdh_read
-.PHONY : sdh_read
-
-# fast build rule for target.
-sdh_read/fast:
-	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_read.dir/build
-.PHONY : sdh_read/fast
-
-#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -814,32 +788,6 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 sensor_msgs_generate_messages_py/fast:
 	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named slip
-
-# Build rule for target.
-slip: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 slip
-.PHONY : slip
-
-# fast build rule for target.
-slip/fast:
-	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/slip.dir/build
-.PHONY : slip/fast
-
-#=============================================================================
-# Target rules for targets named spatial
-
-# Build rule for target.
-spatial: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 spatial
-.PHONY : spatial
-
-# fast build rule for target.
-spatial/fast:
-	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/spatial.dir/build
-.PHONY : spatial/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
@@ -918,19 +866,6 @@ std_srvs_generate_messages_py: cmake_check_build_system
 std_srvs_generate_messages_py/fast:
 	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/std_srvs_generate_messages_py.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/std_srvs_generate_messages_py.dir/build
 .PHONY : std_srvs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named test_node2
-
-# Build rule for target.
-test_node2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_node2
-.PHONY : test_node2
-
-# fast build rule for target.
-test_node2/fast:
-	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/test_node2.dir/build
-.PHONY : test_node2/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_cpp
@@ -1281,27 +1216,22 @@ help:
 	@echo "... tf_generate_messages_lisp"
 	@echo "... _sdh_grasp_generate_messages_check_deps_grasp_info"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... sdh_read"
 	@echo "... sdh_grasp_generate_messages_lisp"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... _sdh_grasp_generate_messages_check_deps_pre_grasp_pos_data"
 	@echo "... _sdh_grasp_generate_messages_check_deps_spatial_array"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... spatial"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... diagnostic_msgs_generate_messages_py"
-	@echo "... slip"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
 	@echo "... sdh_grasp_generate_messages_py"
-	@echo "... test_node2"
 	@echo "... cob_srvs_generate_messages_py"
-	@echo "... data"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... sdh_grasp_genpy"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
