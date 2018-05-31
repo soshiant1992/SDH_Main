@@ -270,32 +270,6 @@ EP_libpcan/fast:
 .PHONY : EP_libpcan/fast
 
 #=============================================================================
-# Target rules for targets named SDH_grip_interface
-
-# Build rule for target.
-SDH_grip_interface: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SDH_grip_interface
-.PHONY : SDH_grip_interface
-
-# fast build rule for target.
-SDH_grip_interface/fast:
-	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/build
-.PHONY : SDH_grip_interface/fast
-
-#=============================================================================
-# Target rules for targets named SDH_move_finger_interface
-
-# Build rule for target.
-SDH_move_finger_interface: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SDH_move_finger_interface
-.PHONY : SDH_move_finger_interface
-
-# fast build rule for target.
-SDH_move_finger_interface/fast:
-	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build
-.PHONY : SDH_move_finger_interface/fast
-
-#=============================================================================
 # Target rules for targets named _sdh_grasp_generate_messages_check_deps_grasp_info
 
 # Build rule for target.
@@ -751,6 +725,32 @@ sdh_grasp_genpy/fast:
 .PHONY : sdh_grasp_genpy/fast
 
 #=============================================================================
+# Target rules for targets named sdh_grip_interface
+
+# Build rule for target.
+sdh_grip_interface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sdh_grip_interface
+.PHONY : sdh_grip_interface
+
+# fast build rule for target.
+sdh_grip_interface/fast:
+	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/build
+.PHONY : sdh_grip_interface/fast
+
+#=============================================================================
+# Target rules for targets named sdh_move_finger_interface
+
+# Build rule for target.
+sdh_move_finger_interface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sdh_move_finger_interface
+.PHONY : sdh_move_finger_interface
+
+# fast build rule for target.
+sdh_move_finger_interface/fast:
+	$(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/build
+.PHONY : sdh_move_finger_interface/fast
+
+#=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1198,17 +1198,16 @@ help:
 	@echo "... control_msgs_generate_messages_py"
 	@echo "... sdh_grasp_genlisp"
 	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... SDH_grip_interface"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... diagnostic_msgs_generate_messages_cpp"
 	@echo "... control_msgs_generate_messages_lisp"
 	@echo "... EP_libpcan"
-	@echo "... SDH_move_finger_interface"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... sdh_grasp_generate_messages"
 	@echo "... cob_srvs_generate_messages_lisp"
+	@echo "... sdh_grip_interface"
 	@echo "... control_msgs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... sdh_grasp_control"
@@ -1216,6 +1215,7 @@ help:
 	@echo "... tf_generate_messages_lisp"
 	@echo "... _sdh_grasp_generate_messages_check_deps_grasp_info"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... sdh_move_finger_interface"
 	@echo "... sdh_grasp_generate_messages_lisp"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... _sdh_grasp_generate_messages_check_deps_pre_grasp_pos_data"

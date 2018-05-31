@@ -48,8 +48,8 @@ double angles11[7];
 std_msgs::Int8 feedback;
 std_msgs::Float64MultiArray vel_dim;
 double angles[7] = {0,0,0,0,0,0,0};
-bool gripit=false;
-bool openhand=true;
+bool GRIP_VEL_TRIGGER=false;
+bool GRIP_POS_TRIGGER=true;
 bool justproximal=true;
 bool reachedproximal=false;
 //bool reachedproximal=false;
@@ -65,15 +65,15 @@ SimpleActionClient<control_msgs::FollowJointTrajectoryAction>* traj_client;
 
 ros::ServiceClient set_operation_mode_client;
 
-ros::Publisher set_velocity;
-ros::Publisher set_feedback;
+ros::Publisher _sdh_velocity_pub;
+//Mike Removed because this is not used
+//  ros::Publisher _sdh_feedback_pub;
 //void domainloop();bool setvelocitymode();void backoff2();
-long double  begin_t;
 bool call_backoff=false;
 bool did_backoff=false;
-ros::ServiceClient recover;
-ros::ServiceClient init;
-ros::ServiceClient stop;
-std_srvs::Trigger trigger ;
+ros::ServiceClient _recover_sc;
+ros::ServiceClient _init_sc;
+ros::ServiceClient _stop_sc;
 
+std_srvs::Trigger trigger ;
 cob_srvs::SetString cobsrv ;

@@ -127,48 +127,6 @@
             <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="SDH_grip_interface">
-         <Option output="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp/SDH_grip_interface" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
-            <Add directory="/opt/ros/indigo/include" />
-            <Add directory="/usr/include/eigen3" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 SDH_grip_interface" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="SDH_grip_interface/fast">
-         <Option output="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp/SDH_grip_interface" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
-            <Add directory="/opt/ros/indigo/include" />
-            <Add directory="/usr/include/eigen3" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 SDH_grip_interface/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       <Target title="tf2_msgs_generate_messages_py">
          <Option working_dir="/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp" />
          <Option type="4" />
@@ -219,48 +177,6 @@
             <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="SDH_move_finger_interface">
-         <Option output="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp/SDH_move_finger_interface" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
-            <Add directory="/opt/ros/indigo/include" />
-            <Add directory="/usr/include/eigen3" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 SDH_move_finger_interface" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="SDH_move_finger_interface/fast">
-         <Option output="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp/SDH_move_finger_interface" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
-            <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
-            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
-            <Add directory="/opt/ros/indigo/include" />
-            <Add directory="/usr/include/eigen3" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 SDH_move_finger_interface/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
       <Target title="sensor_msgs_generate_messages_py">
          <Option working_dir="/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp" />
          <Option type="4" />
@@ -301,6 +217,50 @@
             <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="sdh_grip_interface">
+         <Option output="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp/sdh_grip_interface" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
+            <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
+            <Add directory="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include/eigen3" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 sdh_grip_interface" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sdh_grip_interface/fast">
+         <Option output="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp/sdh_grip_interface" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
+            <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
+            <Add directory="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include/eigen3" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 sdh_grip_interface/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="control_msgs_generate_messages_cpp">
          <Option working_dir="/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp" />
          <Option type="4" />
@@ -332,6 +292,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
+            <Add directory="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include/eigen3" />
          </Compiler>
@@ -353,6 +314,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
+            <Add directory="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include/eigen3" />
          </Compiler>
@@ -398,6 +360,50 @@
          <Option type="4" />
          <MakeCommands>
             <Build command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 rosgraph_msgs_generate_messages_py" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sdh_move_finger_interface">
+         <Option output="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp/sdh_move_finger_interface" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
+            <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
+            <Add directory="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include/eigen3" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 sdh_move_finger_interface" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="sdh_move_finger_interface/fast">
+         <Option output="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp/sdh_move_finger_interface" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/mjmj/catkin_ws_mike/devel/lib/sdh_grasp" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
+            <Add option="-DROS_PACKAGE_NAME=&quot;sdh_grasp&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/home/mjmj/catkin_ws_mike/devel/include" />
+            <Add directory="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include" />
+            <Add directory="/opt/ros/indigo/include" />
+            <Add directory="/usr/include/eigen3" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 sdh_move_finger_interface/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/mjmj/catkin_ws_mike/build/ramp_gripper/sdh_grasp/Makefile&quot;  VERBOSE=1 clean" />
@@ -674,17 +680,17 @@
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/SDH_grip_interface.cpp">
-      </Unit>
-      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/SDH_move_finger_interface.cpp">
-      </Unit>
       <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/sdh_grasp_control.cpp">
       </Unit>
-      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/callbacks.h">
+      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/sdh_grip_interface.cpp">
       </Unit>
-      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/headers.h">
+      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/sdh_move_finger_interface.cpp">
       </Unit>
-      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/src/header/helperFunctions.h">
+      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include/callbacks.h">
+      </Unit>
+      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include/headers.h">
+      </Unit>
+      <Unit filename="/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include/helperFunctions.h">
       </Unit>
       <Unit filename="/home/mjmj/catkin_ws_mike/src/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />

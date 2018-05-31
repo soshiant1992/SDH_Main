@@ -167,34 +167,6 @@ EP_libpcan/fast:
 .PHONY : EP_libpcan/fast
 
 # Convenience name for target.
-ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/rule:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/rule
-.PHONY : ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/rule
-
-# Convenience name for target.
-SDH_grip_interface: ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/rule
-.PHONY : SDH_grip_interface
-
-# fast build rule for target.
-SDH_grip_interface/fast:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/build
-.PHONY : SDH_grip_interface/fast
-
-# Convenience name for target.
-ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/rule:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/rule
-.PHONY : ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/rule
-
-# Convenience name for target.
-SDH_move_finger_interface: ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/rule
-.PHONY : SDH_move_finger_interface
-
-# fast build rule for target.
-SDH_move_finger_interface/fast:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build
-.PHONY : SDH_move_finger_interface/fast
-
-# Convenience name for target.
 ramp_gripper/sdh_grasp/CMakeFiles/_sdh_grasp_generate_messages_check_deps_grasp_info.dir/rule:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/_sdh_grasp_generate_messages_check_deps_grasp_info.dir/rule
 .PHONY : ramp_gripper/sdh_grasp/CMakeFiles/_sdh_grasp_generate_messages_check_deps_grasp_info.dir/rule
@@ -685,6 +657,34 @@ sdh_grasp_genpy/fast:
 .PHONY : sdh_grasp_genpy/fast
 
 # Convenience name for target.
+ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/rule:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/rule
+.PHONY : ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/rule
+
+# Convenience name for target.
+sdh_grip_interface: ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/rule
+.PHONY : sdh_grip_interface
+
+# fast build rule for target.
+sdh_grip_interface/fast:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/build
+.PHONY : sdh_grip_interface/fast
+
+# Convenience name for target.
+ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/rule:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/rule
+.PHONY : ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/rule
+
+# Convenience name for target.
+sdh_move_finger_interface: ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/rule
+.PHONY : sdh_move_finger_interface
+
+# fast build rule for target.
+sdh_move_finger_interface/fast:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/build
+.PHONY : sdh_move_finger_interface/fast
+
+# Convenience name for target.
 ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f CMakeFiles/Makefile2 ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : ramp_gripper/sdh_grasp/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
@@ -936,54 +936,6 @@ trajectory_msgs_generate_messages_py/fast:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
 
-src/SDH_grip_interface.o: src/SDH_grip_interface.cpp.o
-.PHONY : src/SDH_grip_interface.o
-
-# target to build an object file
-src/SDH_grip_interface.cpp.o:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/src/SDH_grip_interface.cpp.o
-.PHONY : src/SDH_grip_interface.cpp.o
-
-src/SDH_grip_interface.i: src/SDH_grip_interface.cpp.i
-.PHONY : src/SDH_grip_interface.i
-
-# target to preprocess a source file
-src/SDH_grip_interface.cpp.i:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/src/SDH_grip_interface.cpp.i
-.PHONY : src/SDH_grip_interface.cpp.i
-
-src/SDH_grip_interface.s: src/SDH_grip_interface.cpp.s
-.PHONY : src/SDH_grip_interface.s
-
-# target to generate assembly for a file
-src/SDH_grip_interface.cpp.s:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_grip_interface.dir/src/SDH_grip_interface.cpp.s
-.PHONY : src/SDH_grip_interface.cpp.s
-
-src/SDH_move_finger_interface.o: src/SDH_move_finger_interface.cpp.o
-.PHONY : src/SDH_move_finger_interface.o
-
-# target to build an object file
-src/SDH_move_finger_interface.cpp.o:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/src/SDH_move_finger_interface.cpp.o
-.PHONY : src/SDH_move_finger_interface.cpp.o
-
-src/SDH_move_finger_interface.i: src/SDH_move_finger_interface.cpp.i
-.PHONY : src/SDH_move_finger_interface.i
-
-# target to preprocess a source file
-src/SDH_move_finger_interface.cpp.i:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/src/SDH_move_finger_interface.cpp.i
-.PHONY : src/SDH_move_finger_interface.cpp.i
-
-src/SDH_move_finger_interface.s: src/SDH_move_finger_interface.cpp.s
-.PHONY : src/SDH_move_finger_interface.s
-
-# target to generate assembly for a file
-src/SDH_move_finger_interface.cpp.s:
-	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/SDH_move_finger_interface.dir/src/SDH_move_finger_interface.cpp.s
-.PHONY : src/SDH_move_finger_interface.cpp.s
-
 src/sdh_grasp_control.o: src/sdh_grasp_control.cpp.o
 .PHONY : src/sdh_grasp_control.o
 
@@ -1008,6 +960,54 @@ src/sdh_grasp_control.cpp.s:
 	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_grasp_control.dir/src/sdh_grasp_control.cpp.s
 .PHONY : src/sdh_grasp_control.cpp.s
 
+src/sdh_grip_interface.o: src/sdh_grip_interface.cpp.o
+.PHONY : src/sdh_grip_interface.o
+
+# target to build an object file
+src/sdh_grip_interface.cpp.o:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/src/sdh_grip_interface.cpp.o
+.PHONY : src/sdh_grip_interface.cpp.o
+
+src/sdh_grip_interface.i: src/sdh_grip_interface.cpp.i
+.PHONY : src/sdh_grip_interface.i
+
+# target to preprocess a source file
+src/sdh_grip_interface.cpp.i:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/src/sdh_grip_interface.cpp.i
+.PHONY : src/sdh_grip_interface.cpp.i
+
+src/sdh_grip_interface.s: src/sdh_grip_interface.cpp.s
+.PHONY : src/sdh_grip_interface.s
+
+# target to generate assembly for a file
+src/sdh_grip_interface.cpp.s:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_grip_interface.dir/src/sdh_grip_interface.cpp.s
+.PHONY : src/sdh_grip_interface.cpp.s
+
+src/sdh_move_finger_interface.o: src/sdh_move_finger_interface.cpp.o
+.PHONY : src/sdh_move_finger_interface.o
+
+# target to build an object file
+src/sdh_move_finger_interface.cpp.o:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/src/sdh_move_finger_interface.cpp.o
+.PHONY : src/sdh_move_finger_interface.cpp.o
+
+src/sdh_move_finger_interface.i: src/sdh_move_finger_interface.cpp.i
+.PHONY : src/sdh_move_finger_interface.i
+
+# target to preprocess a source file
+src/sdh_move_finger_interface.cpp.i:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/src/sdh_move_finger_interface.cpp.i
+.PHONY : src/sdh_move_finger_interface.cpp.i
+
+src/sdh_move_finger_interface.s: src/sdh_move_finger_interface.cpp.s
+.PHONY : src/sdh_move_finger_interface.s
+
+# target to generate assembly for a file
+src/sdh_move_finger_interface.cpp.s:
+	cd /home/mjmj/catkin_ws_mike/build && $(MAKE) -f ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/build.make ramp_gripper/sdh_grasp/CMakeFiles/sdh_move_finger_interface.dir/src/sdh_move_finger_interface.cpp.s
+.PHONY : src/sdh_move_finger_interface.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1029,17 +1029,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... install"
-	@echo "... SDH_grip_interface"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... diagnostic_msgs_generate_messages_cpp"
 	@echo "... control_msgs_generate_messages_lisp"
 	@echo "... EP_libpcan"
-	@echo "... SDH_move_finger_interface"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... sdh_grasp_generate_messages"
 	@echo "... cob_srvs_generate_messages_lisp"
+	@echo "... sdh_grip_interface"
 	@echo "... control_msgs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... sdh_grasp_control"
@@ -1048,6 +1047,7 @@ help:
 	@echo "... _sdh_grasp_generate_messages_check_deps_grasp_info"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... list_install_components"
+	@echo "... sdh_move_finger_interface"
 	@echo "... sdh_grasp_generate_messages_lisp"
 	@echo "... tf_generate_messages_cpp"
 	@echo "... _sdh_grasp_generate_messages_check_deps_pre_grasp_pos_data"
@@ -1077,15 +1077,15 @@ help:
 	@echo "... install/local"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... src/SDH_grip_interface.o"
-	@echo "... src/SDH_grip_interface.i"
-	@echo "... src/SDH_grip_interface.s"
-	@echo "... src/SDH_move_finger_interface.o"
-	@echo "... src/SDH_move_finger_interface.i"
-	@echo "... src/SDH_move_finger_interface.s"
 	@echo "... src/sdh_grasp_control.o"
 	@echo "... src/sdh_grasp_control.i"
 	@echo "... src/sdh_grasp_control.s"
+	@echo "... src/sdh_grip_interface.o"
+	@echo "... src/sdh_grip_interface.i"
+	@echo "... src/sdh_grip_interface.s"
+	@echo "... src/sdh_move_finger_interface.o"
+	@echo "... src/sdh_move_finger_interface.i"
+	@echo "... src/sdh_move_finger_interface.s"
 .PHONY : help
 
 

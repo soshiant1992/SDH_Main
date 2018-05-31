@@ -1,24 +1,24 @@
 #include "headers.h"
 bool setvelocitymode() {
 //    std_srvs::Trigger trigger ;
-   cout<< recover.call(trigger)<<endl;
+   cout<< _recover_sc.call(trigger)<<endl;
     if (controller_mode.compare("velocity")==0) return true;
     std::stringstream ss;
     ss << "velocity" ;
     cobsrv.request.data = ss.str();
 
 
-    if(set_operation_mode_client.call(cobsrv)){
+    if(set_operation_mode_client.call(cobsrv)){     //Mike: cobsrv can freeze here if service does not respond
         if(cobsrv.response.success){
             cout<<"$in_velocity_mode"<<endl;
             controller_mode="velocity";
             return true;
+        } else {
+            cout<<"%not_Velocity_mode"<<endl;
+            setvelocitymode();
+            usleep(100000);
+        }
     }
-    else {
-     cout<<"%not_Velocity_mode"<<endl;
-     setvelocitymode();
-     usleep(100000);
-        }}
 }
 ///............                           Proportional Controller
 /// //pro controller should depend on tactile and error and should return positiv and negative
@@ -33,18 +33,14 @@ void pro_controller(double kp, double error, double &d_theta)
     if(error>threshold){
 //        cout<<"error greater than threshold"<<error<<endl;
         d_theta=-.001;}
-    if(gripit==false) d_theta=0;
+    if(GRIP_VEL_TRIGGER==false) d_theta=0;
 
 }
-void domainloop() {
+void autoGrasp() {
 
-
-    if(gripit){
+    if(GRIP_VEL_TRIGGER){
         int error[6];
         // variable to halt the finger links
-
-
-
 
         for( int i =0; i< 6 ; i++)d_theta[i] = 0;
 
@@ -56,7 +52,7 @@ void domainloop() {
         {
 //              pro_controller(0.1, (error[0]+error[4]+error[2])/3, d_theta[i]) ; /// d_theta should be positive for proximal
               pro_controller(0.05, error[i], d_theta[i]) ; /// d_theta should be positive for proximal
-if(reachedproximal)  pro_controller(0.0, (error[0]+error[4]+error[2])/3, d_theta[i]) ;
+            if(reachedproximal)  pro_controller(0.0, (error[0]+error[4]+error[2])/3, d_theta[i]) ;
 //            if(!justproximal)pro_controller(0.1, (error[3]+error[1]+error[5])/3, d_theta[i+1]) ; // then d_theta should be positive for distal
             if(!justproximal)pro_controller(0.05, error[i+1], d_theta[i+1]) ; // then d_theta should be positive for distal
             if(grasp_type!="cylinder"){ pro_controller(0.05, error[i+1], d_theta[i]) ;}
@@ -78,17 +74,15 @@ if(reachedproximal)  pro_controller(0.0, (error[0]+error[4]+error[2])/3, d_theta
         vel_dim.data[0] = 0 ;
         for(int i = 0 ; i < 6 ; i++) vel_dim.data[i+1] = d_theta[i];
 //cout<<vel_dim.data[1] <<vel_dim.data[2] <<vel_dim.data[3] <<vel_dim.data[4] <<vel_dim.data[5] <<endl;
-        set_velocity.publish(vel_dim) ;
+        _sdh_velocity_pub.publish(vel_dim) ;
 
     }
     else if(controller_mode=="velocity"){
         vel_dim.data[0] = 0 ;
         for(int i = 0 ; i < 6 ; i++) vel_dim.data[i+1] = 0;
 
-        set_velocity.publish(vel_dim) ;
-
+        _sdh_velocity_pub.publish(vel_dim) ;
     }
-
 }
 
 
@@ -96,7 +90,7 @@ if(reachedproximal)  pro_controller(0.0, (error[0]+error[4]+error[2])/3, d_theta
 bool setpositionmode(){
 
 //        std_srvs::Trigger trigger ;
-       cout<< recover.call(trigger)<<endl;
+       cout<< _recover_sc.call(trigger)<<endl;
     if (controller_mode.compare("position")==0) return true;
 
 
@@ -190,10 +184,10 @@ void pre_grasp_open(double angles[]) {
 //    ros::NodeHandle nn;
 //    std_srvs::Trigger trigger ;
         int counter88=0;
-        while(!recover.call(trigger) && (counter88<3)){
+        while(!_recover_sc.call(trigger) && (counter88<3)){
             counter88++;
             ROS_WARN("Failed to call service driver/recover");
-            init.call(trigger);
+            _init_sc.call(trigger);
        usleep(100000)     ;
            }
         if(counter88<3)
@@ -228,7 +222,7 @@ void backoff2(){
 
 //    usleep(250000)     ;
 //    ros::ServiceClient client2 = nn.serviceClient<std_srvs::Trigger>("/driver/stop");
-    stop.call(trigger);
+    _stop_sc.call(trigger);
 //    while(!){
 //        ROS_WARN("Failed to call service driver/stop");
 //usleep(100000)     ;

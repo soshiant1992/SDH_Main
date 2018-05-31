@@ -22,6 +22,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/mjmj/catkin_ws_mike/devel/include"
+  "/home/mjmj/catkin_ws_mike/src/ramp_gripper/sdh_grasp/include"
   "/opt/ros/indigo/include"
   "/usr/include/eigen3"
   )

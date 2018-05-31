@@ -12,6 +12,7 @@ void jointCallback(const sensor_msgs::JointState::ConstPtr& msg)
     }
 }
 
+
 void tactileCallback(const schunk_sdh::TactileSensor::ConstPtr& msg)
 {
     //// Initialization.....
@@ -20,22 +21,27 @@ void tactileCallback(const schunk_sdh::TactileSensor::ConstPtr& msg)
     for(int sensorID=0; sensorID < 6; sensorID++)
     {
         int sz = msg->tactile_matrix[sensorID].cells_x * msg->tactile_matrix[sensorID].cells_y ;
-        double  sensordata[sz];   double mean54=0;int count336=1;
+        double  sensordata[sz];   long int mean54=0;int count336=0;
         for (int i = 0; i < sz; i++)
         {
             int val = msg->tactile_matrix[sensorID].tactile_array[i];
             sensordata[i]=val;
             if(Pstrong[sensorID] < val)
-                Pstrong[sensorID] = val ;
-            mean54+=sensordata[i];
-            if(sensordata[i]>.01)
+                Pstrong[sensorID] = val;
+
+            if(val>0) {
+                mean54+=val;
                 count336++;
+            }
 
         }
-mean54/=count336;
 
-        if(Pstrong[sensorID]>0)
-        { Pstrong[sensorID]=mean54;
+        if(Pstrong[sensorID]>0) {
+            if (count336==0) {
+                Pstrong[sensorID]=mean54;
+            } else {
+                Pstrong[sensorID]=mean54/count336;
+            }
         }
 
     }
@@ -46,34 +52,34 @@ mean54/=count336;
 
     double pmax=1000;
 
-    if(grasp_type=="cube" && gripit && ((Pstrong[3]+Pstrong[5]>pmax)||((Pstrong[3]>pmax&&Pstrong[5]>pmax)))){
-        gripit=false;
+    if(grasp_type=="cube" && GRIP_VEL_TRIGGER && ((Pstrong[3]+Pstrong[5]>pmax)||((Pstrong[3]>pmax&&Pstrong[5]>pmax)))){
+        GRIP_VEL_TRIGGER=false;
         call_backoff=true;
         backoff2();
     }
-  else  if( grasp_type=="sphere" && gripit &&(
+  else  if( grasp_type=="sphere" && GRIP_VEL_TRIGGER &&(
                 (Pstrong[1]>pmax&&  Pstrong[3]>pmax&&  Pstrong[5]>pmax)||
                 (Pstrong[0]>pmax&&  Pstrong[2]>pmax&&  Pstrong[4]>pmax)
                 )){
-        gripit=false;
+        GRIP_VEL_TRIGGER=false;
         call_backoff=true;
         backoff2();
     }
-  else  if( grasp_type=="cylinder" &&gripit && reachedproximal==false &&(
+  else  if( grasp_type=="cylinder" && GRIP_VEL_TRIGGER && reachedproximal==false &&(
 
               Pstrong[0]>pmax/2&&  Pstrong[2]>pmax/2&&  Pstrong[4]>pmax/2  )){
         reachedproximal=true;
 
     }
-   else if( grasp_type=="cylinder" &&gripit &&(
+   else if( grasp_type=="cylinder" && GRIP_VEL_TRIGGER &&(
                 Pstrong[1]>pmax &&  Pstrong[3]>pmax &&  Pstrong[5]>pmax
             /*&&  Pstrong[0]>10&&  Pstrong[2]>10&&  Pstrong[4]>10 */ )){
-        gripit=false;cout<<"gripit=false"<<endl;
+        GRIP_VEL_TRIGGER=false;cout<<"GRIP_VEL_TRIGGER=false"<<endl;
         call_backoff=true;
 
           backoff2();
     }
-//cout<<gripit<<endl;
+//cout<<GRIP_VEL_TRIGGER<<endl;
 
 
 
@@ -87,15 +93,16 @@ void backoff(const sdh_grasp::pre_grasp_pos_data& msg){
     cout<<"gotbackoff"<<endl;
     backoff2();
 }
+
 void grasp_type_callback(const sdh_grasp::grasp_info& msg) {
 //    ros::NodeHandle nn;
 //    std_srvs::Trigger trigger ;
     int counter88=0;
-    while(!recover.call(trigger) && (counter88<3)){
+    while(!_recover_sc.call(trigger) && (counter88<3)){
         counter88++;
         ROS_WARN("Failed to call service driver/recover");
    usleep(1000000)     ;
-   init.call(trigger);
+   _init_sc.call(trigger);
 
        }
     if(counter88<3)
@@ -105,8 +112,8 @@ else
 
 
     setvelocitymode();
-    gripit=true;
-    openhand=false;reachedproximal=false;
+    GRIP_VEL_TRIGGER=true;
+    GRIP_POS_TRIGGER=false;reachedproximal=false;
     //    reachedproximal=false;
     if(msg.type=="cylinder")justproximal=false;
     grasp_type=msg.type;
@@ -117,8 +124,8 @@ else
 }
 void stop_callback(const sdh_grasp::grasp_info& msg) {
     setvelocitymode();
-    gripit=false;
-    openhand=false;reachedproximal=false;
+    GRIP_VEL_TRIGGER=false;
+    GRIP_POS_TRIGGER=false;reachedproximal=false;
     //    reachedproximal=false;
     if(msg.type=="cylinder")justproximal=false;
     grasp_type=msg.type;
@@ -133,8 +140,8 @@ void stop_callback(const sdh_grasp::grasp_info& msg) {
 }
 void grasp_pos_callback(const sdh_grasp::pre_grasp_pos_data& msg) {
 
-    openhand=true;
-    gripit=false;
+    GRIP_POS_TRIGGER=true;
+    GRIP_VEL_TRIGGER=false;
     justproximal=true;
 
     //    reachedproximal=false;

@@ -2,7 +2,16 @@ cmake_minimum_required(VERSION 2.8.3)
 project(sdh_grasp)
 
 ## Add support for C++11, supported in ROS Kinetic and newer
-# add_definitions(-std=c++11)
+include(CheckCXXCompilerFlag)
+CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
+CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
+if(COMPILER_SUPPORTS_CXX11)
+    add_definitions(-std=c++11)
+elseif(COMPILER_SUPPORTS_CXX0X)
+    add_definitions(-std=c++0x)
+else()
+    message(FATAL_ERROR "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
+endif()
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -116,6 +125,7 @@ catkin_package(
 ## Your package locations should be listed before other locations
 # include_directories(include)
 include_directories(
+  include
   ${catkin_INCLUDE_DIRS}
   ${Eigen_INCLUDE_DIRS}
 )
@@ -137,11 +147,11 @@ include_directories(
 #headerc137
 
 #add_executable(sdh_read src/sdh_read.cpp)
-add_executable(sdh_grasp_control src/sdh_grasp_control.cpp src/header/headers.h src/header/callbacks.h src/header/helperFunctions.h)
+add_executable(sdh_grasp_control src/sdh_grasp_control.cpp include/headers.h include/callbacks.h include/helperFunctions.h)
 #add_executable(graspControll src/graspControll.cpp)
 #add_executable(test_node2 src/test_node2.cpp)
-add_executable(SDH_move_finger_interface src/SDH_move_finger_interface.cpp)
-add_executable(SDH_grip_interface src/SDH_grip_interface.cpp)
+add_executable(sdh_move_finger_interface src/sdh_move_finger_interface.cpp)
+add_executable(sdh_grip_interface src/sdh_grip_interface.cpp)
 #add_executable(data src/data.cpp)
 #add_executable(slip src/slip.cpp)
 #add_executable(spatial src/spatial.cpp)
@@ -159,8 +169,8 @@ add_executable(SDH_grip_interface src/SDH_grip_interface.cpp)
 add_dependencies(sdh_grasp_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 #add_dependencies(test_node2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 #add_dependencies(graspControll ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(SDH_move_finger_interface ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(SDH_grip_interface ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(sdh_move_finger_interface ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(sdh_grip_interface ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 #add_dependencies(data ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 #add_dependencies(slip ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 #add_dependencies(spatial ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
@@ -185,13 +195,13 @@ target_link_libraries(sdh_grasp_control
 #target_link_libraries(test_node2
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(SDH_move_finger_interface
+target_link_libraries(sdh_move_finger_interface
    ${catkin_LIBRARIES}
  )
 #target_link_libraries(graspControll
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(SDH_grip_interface
+target_link_libraries(sdh_grip_interface
    ${catkin_LIBRARIES}
  )
 #target_link_libraries(data
